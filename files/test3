@@ -1,0 +1,10 @@
+create(db,"db1")
+create(tbl,"tbl3",db1,4)
+create(col,"col1",db1.tbl3)
+create(col,"col2",db1.tbl3)
+create(col,"col3",db1.tbl3)
+create(col,"col4",db1.tbl3)
+create(idx,db1.tbl3.col1,sorted,clustered)
+create(idx,db1.tbl3.col2,sorted,unclustered)
+load("../../project_tests_1M/data3.csv")
+shutdown

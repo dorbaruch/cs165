@@ -1,0 +1,3 @@
+s1=select(db1.tbl3.col1,800,810)
+f1=fetch(db1.tbl3.col3,s1)
+print(f1)
